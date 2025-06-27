@@ -1,0 +1,173 @@
+
+
+  :root{
+     /* background color  */
+     
+     
+     --primary-color: #ffffff;
+     --secondary-color: #fffffff8;
+     --btn-bg-color: #58655A;
+     --text-color: #575757;
+    
+
+     
+     /* gradient color  */
+     
+     --gradient-1: linear-gradient(120deg, #ffffff, #fffffff8);
+     --gradient-2: #7a93b81A;
+     --gradient-3: linear-gradient(360deg, #7a93b826, #7a93b81A);
+     
+    
+     /*others color*/
+     --scrollbar-color: #263040;
+     --scrollbar-thump: #84b0f5;
+     --scrollbar-hover: #6f89b6;
+    
+     /* transition  */
+     --transition-1: 0.25s ease;
+     --transition-2: 0.3s ease;
+     --transition-3: 0.5s ease;
+     
+ 
+      /* fontsize  */
+      --font-h1:5.5rem;
+      --font-h2:4rem;
+      --font-h3:3rem;
+      --font-h4:2rem;
+      --font-h5:1.5rem;
+      
+     --font-14:0.875rem;
+     --font-16:1rem;
+     --font-18:1.125rem;
+     --font-24:1.5rem;
+
+
+     
+      /* z-index  */
+      --z-minus:-1;
+      --z-zero:0;
+      --z-low:1;
+      --z-high:10;
+      --z-100:100;
+      --z-tooltop:1000;
+      --z-fix:1100;
+      --z-overlay:1110;
+      --z-modal:1990;
+      --z-max:9999;
+
+ 
+     }
+ 
+     /* ----------------------------------------
+       ============= reset css  ==============
+       -------------------------------------------*/
+     *,
+     *::after,
+     *::before{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+ 
+     }
+     li{
+         list-style: none;
+     }
+ 
+     a,
+     img,
+     input,
+     button,
+     i{
+         display: block;
+         text-transform: capitalize;
+     }
+     button{
+      background: none;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+     }
+     
+     a{
+         text-decoration: none;
+     }
+     img{
+         height: auto;
+         max-width: 100%;
+         object-fit: cover;
+     }
+    
+     html{
+         scroll-behavior: smooth;
+        
+     }
+     body{
+         max-width: 100%;
+         height: auto;
+         margin: 0 auto;
+         font-family: "Inter", sans-serif;
+         position: relative;
+         font-size: var(--font-16);
+
+         transition:  all 0.5s ease-in-out;
+         overflow-X: hidden; 
+         animation: fadeed 0.5s ease-in-out;
+     }
+     h1{
+        font-size: var(--font-h1);
+     }
+     h2{
+        font-size: var(--font-h2);
+     }
+     h3{
+        font-size: var(--font-h3);
+     }
+     h4{
+        font-size: var(--font-h4);
+     }
+     h5{
+        font-size: var(--font-h5);
+     }
+     
+     
+    
+     
+ /* ============----page scroll bar-----============== */
+     ::-webkit-scrollbar { 
+         width: 5px; 
+         
+     }
+ 
+     ::-webkit-scrollbar-track { 
+         overflow: hidden;
+         background-color: var(--scrollbar-color);
+     }
+ 
+     ::-webkit-scrollbar-thumb {
+    
+     border-radius:100px;
+     background-color: var(--scrollbar-thump);
+     transition: 0.3s;
+    
+   }
+   ::-webkit-scrollbar-thumb:hover{
+   background-color: var(--scrollbar-hover);
+   }
+ 
+ /* =====================cursor customizing=============== */
+ 
+ /* =====================others=========================== */
+    .container{
+     max-width: 100%;
+     padding: 0.5% 1% ;
+     margin: 0 5% ;
+     
+    }
+    section, footer{
+     margin: 2% 5%;
+     max-width: 100%;
+    }
+
+     /* =================================================
+    --------------Header start here------------------
+    =================================================  */
