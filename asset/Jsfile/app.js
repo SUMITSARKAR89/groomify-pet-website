@@ -13,7 +13,7 @@ closeIcon.addEventListener("click", () => {
     menuIcon.style.display = "block";
 });
 
-
+// =================button content ===================
 
 const tabBtn = document.querySelectorAll(".tab-btn");
 const tabContent = document.querySelectorAll(".tab-content");
@@ -32,4 +32,12 @@ tabBtn.forEach((btn, i) => {
         })
         tabContent[i].classList.add("tabActive")
     })
-})
+});
+
+// date=================
+
+    const dateText = document.getElementById('dateText');
+    const today = new Date();
+    const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+    const formattedDate = today.toLocaleDateString('en-US', options);
+    dateText.textContent = `Date: ${formattedDate}`;
