@@ -41,3 +41,17 @@ tabBtn.forEach((btn, i) => {
     const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
     const formattedDate = today.toLocaleDateString('en-US', options);
     dateText.textContent = `Date: ${formattedDate}`;
+
+
+
+
+
+
+
+     const faqContent = document.querySelectorAll('.faq-content');
+
+faqContent.forEach( faqs => {
+    faqs.addEventListener("click", () => {
+        faqs.classList.toggle("active");
+    })
+});
