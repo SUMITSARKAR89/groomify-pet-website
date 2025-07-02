@@ -185,6 +185,10 @@
            
           
         }
+        .contact-us-container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
     }
 /* ----------------1024px;------------- */
     @media(max-width:1030px){
@@ -251,7 +255,15 @@
            
             
         }
-       
+        .form-container{
+            flex-direction: column;
+        }
+        .form-image,
+        .form-content {
+            width: 100%;
+            transition: var(--transition-1);
+        }
+        
 
     }
     @media(max-width:834px){
@@ -261,8 +273,11 @@
            
             
         }
+        #petCard img{
+            width: 100%;
+        }
 
-     }
+    }
 /* ----------------768px;------------- */
     @media(max-width:768px){
 
@@ -338,8 +353,14 @@
         justify-content: center;
         align-items: center;
        }
+       #petCard{
+        flex-direction: column;
+       }
+        .contact-us-container{
+            grid-template-columns: 1fr;
+        }
 
-     }
+    }
 /* ----------------600px;------------- */
     @media(max-width:600px){
 
